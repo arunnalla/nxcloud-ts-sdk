@@ -1,0 +1,22 @@
+{
+  "name": "nxcloud-ts-sdk",
+  "version": "1.0.0",
+  "description": "NXCloud typescript SDK",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunnalla/nxcloud-ts-sdk.git"
+  },
+  "keywords": [
+    "nxcloud",
+    "sdk"
+  ],
+  "author": "Arun Nalla <hello@arunnalla.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arunnalla/nxcloud-ts-sdk/issues"
+  },
+  "homepage": "https://github.com/arunnalla/nxcloud-ts-sdk#readme"
+}
