@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/arunnalla/nxcloud-ts-sdk/issues"
   },
-  "homepage": "https://github.com/arunnalla/nxcloud-ts-sdk#readme"
+  "homepage": "https://github.com/arunnalla/nxcloud-ts-sdk#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
