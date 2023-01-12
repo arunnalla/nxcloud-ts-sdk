@@ -14,3 +14,27 @@ const sendSms = async () => {
   return await app.sendSMS({ phone: '91999999999', content: 'Hello, Jhon Doe' });
 };
 ```
+
+### Install dependencies
+
+```sh
+npm i
+```
+
+### Test
+
+```sh
+npm test
+```
+
+### Build
+
+```sh
+npm run build
+```
+
+### Publish
+
+```sh
+npm publish
+```
