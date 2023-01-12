@@ -49,13 +49,9 @@ class NXCloud {
         ext,
       }),
     };
-    const sendSMSResponse = await axios.post(
-      NXCloud.BASE_URL + path,
-      qs.stringify(body),
-      {
-        headers: NXCloud.DEFAULT_HEADERS,
-      }
-    );
+    const sendSMSResponse = await axios.post(NXCloud.BASE_URL + path, qs.stringify(body), {
+      headers: NXCloud.DEFAULT_HEADERS,
+    });
 
     if (sendSMSResponse.data.code !== '0') {
       NXCloud.handleSendSmsErrors(sendSMSResponse.data);
@@ -75,9 +71,7 @@ class NXCloud {
     } as const;
     const optionalParams: SendSMSRequestBodyOptionalParams = {};
 
-    const keys = Object.keys(propertyToRequestBodyFieldMapper) as Array<
-      keyof typeof propertyToRequestBodyFieldMapper
-    >;
+    const keys = Object.keys(propertyToRequestBodyFieldMapper) as Array<keyof typeof propertyToRequestBodyFieldMapper>;
 
     keys.forEach((key) => {
       if (params[key]) {
