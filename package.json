@@ -39,5 +39,9 @@
     "axios": "^1.2.2",
     "qs": "^6.11.0"
   },
-  "prettier": "@arunnalla/prettier-config"
+  "prettier": "@arunnalla/prettier-config",
+  "volta": {
+    "node": "16.17.0",
+    "npm": "8.15.0"
+  }
 }
