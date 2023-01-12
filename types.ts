@@ -22,8 +22,8 @@ interface SendSMSRequestBodyOptionalParams {
 }
 
 interface SendSMSRequestBodyParams extends SendSMSRequestBodyOptionalParams {
-  appKey: string;
-  secretKey: string;
+  appkey: string;
+  secretkey: string;
   phone: string;
   content: string;
 }
@@ -31,7 +31,7 @@ interface SendSMSRequestBodyParams extends SendSMSRequestBodyOptionalParams {
 interface SendSMSResponse {
   result: string;
   code: string;
-  messageId: string;
+  messageid: string;
 }
 
 export {

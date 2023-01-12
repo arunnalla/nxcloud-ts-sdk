@@ -13,7 +13,7 @@ class NXCloud {
     'Content-Type': 'application/x-www-form-urlencoded',
   };
 
-  private static readonly BASE_URL: string = 'http://api2.nxcloud.com/api/';
+  private static readonly BASE_URL: string = 'https://api2.nxcloud.com/api/';
 
   private appKey: string;
 
@@ -33,11 +33,11 @@ class NXCloud {
     linkVerbose,
     drUrl,
     ext,
-  }: SendSMSParams) {
+  }: SendSMSParams): Promise<string> {
     const path = 'sms/mtsend';
     const body: SendSMSRequestBodyParams = {
-      appKey: this.appKey,
-      secretKey: this.secretKey,
+      appkey: this.appKey,
+      secretkey: this.secretKey,
       phone,
       content,
       ...NXCloud.getOptionalParams({
@@ -61,7 +61,7 @@ class NXCloud {
       NXCloud.handleSendSmsErrors(sendSMSResponse.data);
     }
 
-    return;
+    return sendSMSResponse.data.messageid;
   }
 
   private static getOptionalParams(params: SendSMSOptionalParams) {
