@@ -1,5 +1,5 @@
 {
-  "name": "nxcloud-ts-sdk",
+  "name": "@arunnalla/nxcloud-ts-sdk",
   "version": "1.0.0",
   "description": "NXCloud typescript SDK",
   "main": "dist/index.js",
